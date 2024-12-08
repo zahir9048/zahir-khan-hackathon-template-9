@@ -333,7 +333,9 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="font-normal text-[18px] text-center lg:text-start">Fast Food</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">
+                  Fast Food
+                </h6>
               </div>
               <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                 <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
@@ -343,7 +345,9 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="font-normal text-[18px] text-center lg:text-start">Lunch</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">
+                  Lunch
+                </h6>
               </div>
               <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                 <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
@@ -353,7 +357,9 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="font-normal text-[18px] text-center lg:text-start">Dinner</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">
+                  Dinner
+                </h6>
               </div>
             </div>
             <div className="h-[100%] flex justify-center lg:justify-start">
@@ -802,7 +808,9 @@ export default function Home() {
                   <div>
                     <img src="/quotes.png" alt="" />
                   </div>
-                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  <p
+                    className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque diam pellentesque bibendum non dui volutpat
@@ -810,17 +818,25 @@ export default function Home() {
                     pretium donec id elementum. Ultrices mattis sed vitae mus
                     risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
                   </p>
-                  <div className="flex">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                  <div className="flex gap-[10px]">
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#E0E0E0] bi bi-star-fill"></i>
                   </div>
-                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Alamin Hasan</h5>
-                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Food Specialist</p>
+                  <h5
+                    className="font-bold text-[24px] text-[#333333]"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Alamin Hasan
+                  </h5>
+                  <p
+                    className="m-0 text-[#828282] text-[16px] font-normal"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Food Specialist
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -837,7 +853,9 @@ export default function Home() {
                   <div>
                     <img src="/quotes.png" alt="" />
                   </div>
-                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  <p
+                    className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque diam pellentesque bibendum non dui volutpat
@@ -845,17 +863,25 @@ export default function Home() {
                     pretium donec id elementum. Ultrices mattis sed vitae mus
                     risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
                   </p>
-                  <div className="flex">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                  <div className="flex gap-[10px]">
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#E0E0E0] bi bi-star-fill"></i>
                   </div>
-                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Zahir Khan</h5>
-                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Food Specialist</p>
+                  <h5
+                    className="font-bold text-[24px] text-[#333333]"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Zahir Khan
+                  </h5>
+                  <p
+                    className="m-0 text-[#828282] text-[16px] font-normal"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Food Specialist
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
@@ -872,7 +898,9 @@ export default function Home() {
                   <div>
                     <img src="/quotes.png" alt="" />
                   </div>
-                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  <p
+                    className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                   >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque diam pellentesque bibendum non dui volutpat
@@ -880,17 +908,25 @@ export default function Home() {
                     pretium donec id elementum. Ultrices mattis sed vitae mus
                     risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
                   </p>
-                  <div className="flex">
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
-                    <i className="bi bi-star-fill"></i>
+                  <div className="flex gap-[10px]">
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#FF9F0D] bi bi-star-fill"></i>
+                    <i className="text-[#E0E0E0] bi bi-star-fill"></i>
                   </div>
-                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Asim Khan</h5>
-                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-                  >Food Specialist</p>
+                  <h5
+                    className="font-bold text-[24px] text-[#333333]"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Asim Khan
+                  </h5>
+                  <p
+                    className="m-0 text-[#828282] text-[16px] font-normal"
+                    style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                  >
+                    Food Specialist
+                  </p>
                 </div>
               </div>
             </SwiperSlide>
