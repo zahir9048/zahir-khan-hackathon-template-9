@@ -26,9 +26,9 @@ export default function Home() {
     { id: 6, label: "Soups", content: "Soups" },
   ];
   return (
-    <div className="bg-[#0D0D0DF2]">
-      <div className="sec1 max-w-[1320px] relative h-[600px] mx-auto flex justify-between items-center">
-        <div className="absolute top-[30px] left-[-50px] flex flex-col items-center gap-[30px]">
+    <div className="bg-[#0D0D0DF2] pt-[150px] lg:pt-0">
+      <div className="sec1 max-w-[1320px] relative lg:h-[600px] mx-auto px-[20px] sm:px-[60px] flex justify-between items-center md:flex-row flex-col">
+        <div className="hidden lg:absolute lg:top-[30px] lg:left-[-50px] lg:flex lg:flex-col lg:items-center lg:gap-[30px]">
           <div className="w-[1px] h-[150px] bg-[#FFF]"></div>
           <div className="flex flex-col text-white gap-[30px]">
             <a href="">
@@ -43,22 +43,22 @@ export default function Home() {
           </div>
           <div className="w-[1px] h-[150px] bg-[#FFF]"></div>
         </div>
-        <div className="w-[40%]">
+        <div className="md:w-[40%]">
           <h3
-            className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-normal`}
+            className={`${greatVibes.className} text-center md:text-start text-[#FF9F0D] text-[32px] font-normal`}
           >
             Its Quick & Amusing!
           </h3>
-          <div className="flex flex-col gap-[15px]">
+          <div className="flex flex-col gap-[15px] items-center md:items-start">
             <h1
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-              className="leading-[68px] font-helvetica text-[60px] text-white"
+              className="md:leading-[68px] font-helvetica text-center md:text-start text-[38px] md:text-[60px] text-white"
             >
               <span className="text-[#FF9F0D]">Th</span>e Art of speed food
               Quality
             </h1>
             <p
-              className={`${inter.className} font-normal text-[16px] text-white`}
+              className={`${inter.className} font-normal text-[16px] text-white text-center md:text-start`}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
               sed pharetra dictum neque massa congue
@@ -71,8 +71,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="w-[55%]">
-          <div className="w-[100%] h-[100%] transform translate-x-[90px]">
+        <div className="md:w-[55%]">
+          <div className="w-[100%] h-[100%] transform xxl:translate-x-[90px]">
             <img
               src="/heroImg.png"
               className="w-[100%] h-[100%] object-center object-cover"
@@ -81,17 +81,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec2 text-white max-w-[1320px] relative h-[600px] mx-auto flex justify-between items-center">
-        <div className="w-[50%]">
+      <div className="sec2 px-[20px] sm:px-[60px] py-[50px] text-white max-w-[1320px] relative lg:h-[600px] mx-auto flex justify-between items-center flex-col md:flex-row gap-[30px] md:gap-0">
+        <div className="md:w-[50%] text-center md:text-start">
           <h3
             className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-normal`}
           >
             About us
           </h3>
-          <div className="flex flex-col gap-[15px]">
+          <div className="flex flex-col gap-[15px] items-center md:items-start">
             <h1
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-              className="leading-[68px] font-helvetica text-[60px] text-white"
+              className="leading-[68px] font-helvetica text-[38px] md:text-[60px] text-white"
             >
               <span className="text-[#FF9F0D]">We</span> Create the best foody
               product
@@ -133,7 +133,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="w-[48%] flex flex-wrap gap-[10px]">
+        <div className="md:w-[48%] flex justify-center flex-wrap gap-[10px]">
           <div className="w-[100%] h-[100%]">
             <img
               src="/egg.png"
@@ -141,14 +141,14 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="w-[48%] h-[100%]">
+          <div className="w-[45%] h-[100%]">
             <img
               src="/meal.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
               alt=""
             />
           </div>
-          <div className="w-[50%] h-[100%]">
+          <div className="w-[45%] h-[100%]">
             <img
               src="/sandwich.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -157,7 +157,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec3 text-white max-w-[1320px] relative h-[600px] mx-auto flex flex-col">
+      <div className="sec3 px-[20px] py-[60px] sm:px-[60px] text-white max-w-[1320px] relative lg:h-[500px] mx-auto flex flex-col">
         <div className="flex flex-col items-center">
           <h3
             className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-bold`}
@@ -166,14 +166,14 @@ export default function Home() {
           </h3>
           <h1
             style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            className="text-[##FF9F0D] text-[48px]"
+            className="text-[##FF9F0D] text-[48px] text-center"
           >
-            <span>Ch</span>oose Food Iteam
+            <span>Ch</span>oose Food Item
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[40px] justify-items-center">
+          <div className="max-w-[300px] relative group cursor-pointer">
             <img
               src="/dish1.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -190,7 +190,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px]  relative group cursor-pointer">
             <img
               src="/burger.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -207,7 +207,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px] relative group cursor-pointer">
             <img
               src="/dish3.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -224,7 +224,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px]  relative group cursor-pointer">
             <img
               src="/donuts.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -243,17 +243,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec4 text-white max-w-[1320px] h-[800px] mx-auto flex justify-between items-center">
-        <div className="w-[50%] flex flex-wrap gap-[20px]">
-          <div className="flex gap-[20px] items-end">
-            <div className="w-[360px] h-[360px]">
+      <div className="sec4 px-[20px] sm:px-[60px]py-[50px] text-white max-w-[1320px] lg:h-[800px] mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-0 gap-[30px]">
+        <div className="lg:w-[50%] flex flex-wrap gap-[20px] justify-center">
+          <div className="flex gap-[20px] items-end flex-col sm:flex-row">
+            <div className="sm:max-w-[360px] h-[360px]">
               <img
                 src="/shawerma.png"
                 className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
                 alt=""
               />
             </div>
-            <div className="w-[290px] h-[230px] pb-[10px]">
+            <div className="sm:max-w-[290px] h-[230px] pb-[10px]">
               <img
                 src="/burger2.png"
                 className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -261,15 +261,15 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex gap-[20px] items-start">
-            <div className="w-[244px] h-[306px] pt-[10px]">
+          <div className="flex gap-[20px] items-start flex-col sm:flex-row">
+            <div className="sm:max-w-[244px] h-[306px] pt-[10px]">
               <img
                 src="/nuggets.png"
                 className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
                 alt=""
               />
             </div>
-            <div className="w-[225px] h-[225px] pt-[10px]">
+            <div className="sm:max-w-[225px] h-[225px] pt-[10px]">
               <img
                 src="/burger3.png"
                 className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-[40%]">
+        <div className="lg:w-[40%]">
           <h3
             className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-normal`}
           >
@@ -303,7 +303,7 @@ export default function Home() {
           <div className="flex flex-col gap-[25px]">
             <h1
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-              className="leading-[68px] font-helvetica text-[60px] text-white"
+              className="md:leading-[68px] font-helvetica text-[38px] md:text-[60px] text-white"
             >
               <span className="text-[#FF9F0D]">Ex</span>tra ordinary taste And
               Experienced
@@ -377,7 +377,7 @@ export default function Home() {
       </div>
       <div className="bg-[url('/sec5bg.png')] relative bg-cover bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-75"></div>
-        <div className="sec5 text-white max-w-[1320px] relative h-[470px] mx-auto flex flex-col justify-center">
+        <div className="sec px-[20px] sm:px-[60px] py-[60px] text-white max-w-[1320px] relative lg:h-[470px] mx-auto flex flex-col justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="flex flex-col items-center justify-center group cursor-pointer">
               <div className="w-[120px] h-[120px] ">
@@ -389,7 +389,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <p
-                  className="m-0 font-bold text-[24px]"
+                  className="m-0 font-bold text-[24px] text-center"
                   style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                 >
                   Professional Chefs
@@ -435,7 +435,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <p
-                  className="m-0 font-bold text-[24px]"
+                  className="m-0 font-bold text-[24px] text-center"
                   style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                 >
                   Years Of Experienced
@@ -458,7 +458,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <p
-                  className="m-0 font-bold text-[24px]"
+                  className="m-0 font-bold text-[24px] text-center"
                   style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                 >
                   Happy Customers
@@ -474,7 +474,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec6 max-w-[1320px] h-[800px] mx-auto flex items-center justify-center">
+      <div className="sec6 px-[20px] sm:px-[60px] py-[60px] max-w-[1320px] lg:h-[800px] mx-auto flex items-center justify-center">
         <div className="mt-8">
           <div className="flex flex-col items-center">
             <h5
@@ -483,14 +483,14 @@ export default function Home() {
               Choose & pick
             </h5>
             <h2
-              className="text-white text-[48px] font-bold"
+              className="text-white text-[48px] font-bold text-center"
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
             >
               <span className="text-[#FF9F0D]">Fr</span>om Our Menu
             </h2>
           </div>
 
-          <div className="flex">
+          <div className="flex md:flex-row flex-col">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -506,9 +506,9 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="p-4 text-gray-700">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="p-4 text-gray-700 flex flex-col items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+              <div className="col-span-full md:col-span-1 w-[100%] lg:max-w-[300px] h-[330px] relative group cursor-pointer">
                 <img
                   src="/sec6dish.png"
                   className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -678,7 +678,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec7 text-white max-w-[1320px] relative h-[600px] mx-auto flex flex-col gap-[25px] items-center">
+      <div className="sec7 px-[20px] sm:px-[60px] py-[60px] text-white max-w-[1320px] relative lg:h-[600px] mx-auto flex flex-col gap-[25px] items-center">
         <div className="flex flex-col items-center">
           <h3
             className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-bold`}
@@ -687,13 +687,13 @@ export default function Home() {
           </h3>
           <h1
             style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-            className="text-[##FF9F0D] text-[48px]"
+            className="text-[##FF9F0D] text-[48px] text-center"
           >
             <span>Me</span>et Our Chef
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="max-w-[300px] h-[330px] relative group cursor-pointer">
             <img
               src="/person1.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -707,7 +707,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px] h-[330px] relative group cursor-pointer">
             <img
               src="/person2.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -721,7 +721,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px] h-[330px] relative group cursor-pointer">
             <img
               src="/person3.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
@@ -735,7 +735,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[300px] h-[330px] relative group cursor-pointer">
+          <div className="max-w-[300px] h-[330px] relative group cursor-pointer">
             <img
               src="/person4.png"
               className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"

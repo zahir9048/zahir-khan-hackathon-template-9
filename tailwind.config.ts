@@ -13,6 +13,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      screens: {
+        xxl: "1536px", // Define custom breakpoint at 1536px
       }
     },
   },
