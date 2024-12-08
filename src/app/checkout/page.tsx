@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CheckoutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen pt-[115px] lg:pt-0 bg-white">
       {/* Background Section */}
       <div
         className="w-full bg-no-repeat bg-center flex justify-center"
@@ -14,20 +14,34 @@ export default function CheckoutPage() {
         }}
       >
         {/* Header Section */}
-        <div className="w-full max-w-5xl flex flex-col justify-center items-center text-white text-center py-16">
-          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">404 Error</p>
+        <div className="max-w-[1320px] mx-auto px-[20px] lg:px-[60px]  flex flex-col justify-center items-center text-white text-center py-16">
+          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+            CheckOut 
+          </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <p className="text-xl sm:text-2xl md:text-3xl">Home</p>
+            <a href="home" className="text-xl sm:text-2xl md:text-3xl">
+              Home
+            </a>
             <div className="flex items-center">
-              <Image src="/Vector.png" width={20} height={20} alt="Vector Icon" />
-              <p className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D]">404</p>
+              <Image
+                src="/Vector.png"
+                width={10}
+                height={10}
+                alt="Vector Icon"
+              />
+              <a
+                href="/checkout"
+                className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D]"
+              >
+                Checkout
+              </a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-8 bg-white" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
+      <div className="max-w-[1320px] px-[20px] lg:px-[60px]  mx-auto px-4 py-8 bg-white" style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Left Column - Forms */}
           <div className="space-y-6">
@@ -175,7 +189,7 @@ export default function CheckoutPage() {
             </div>
 
             {/* Buttons Section */}
-            <div className="flex justify-between pt-4">
+            <div className="flex justify-between pt-4 md:flex-row flex-col">
               <button className="py-2 border border-gray-300 rounded-md text-sm font-medium w-72 text-black">
                 Back to cart
               </button>

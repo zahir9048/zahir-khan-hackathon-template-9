@@ -44,45 +44,45 @@ const FAQPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-black">
+    <div className="min-h-screen pt-[115px] lg:pt-0 bg-gray-100 text-black">
       <div className="min-h-screen bg-white">
-        {/* Background Section */}
         <div
           className="w-full bg-no-repeat bg-center flex justify-center"
           style={{
             backgroundImage: "url('/unsplash.png')",
             backgroundSize: "cover",
             backgroundPosition: "center top",
-            width: "100%",
             height: "300px",
           }}
         >
           {/* Header Section */}
-          <div className="w-full max-w-5xl flex flex-col justify-center items-center text-white mb-10">
-            <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">
-              FAQ Page
+          <div className="max-w-[1320px] mx-auto px-[20px] lg:px-[60px]  flex flex-col justify-center items-center text-white text-center py-16">
+            <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+              FAQs
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
-              <p className="text-xl sm:text-2xl md:text-3xl text-[20px]">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <a href="home" className="text-xl sm:text-2xl md:text-3xl">
                 Home
-              </p>
+              </a>
               <div className="flex items-center">
                 <Image
                   src="/Vector.png"
-                  width={20} // Correct dimensions for the icon
-                  height={20}
+                  width={10}
+                  height={10}
                   alt="Vector Icon"
                 />
-                <p className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D] text-[20px]">
-                  faq
-                </p>
+                <a
+                  href="/faq"
+                  className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D]"
+                >
+                  FAQs
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* FAQ Section */}
-        <main className="max-w-4xl mx-auto py-16 px-4">
+        <main className="max-w-[1320px] mx-auto px-[20px] lg:px-[60px] py-16 px-4">
           <h2 className="text-4xl font-bold text-center mb-8">
             Questions Looks Here
           </h2>

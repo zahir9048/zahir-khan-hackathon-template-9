@@ -71,7 +71,7 @@ export default function Home() {
               sed pharetra dictum neque massa congue
             </p>
             <Link
-              href=""
+              href="/menu"
               className={`px-[40px] py-3 w-fit rounded-[30px] bg-[#FF9F0D] text-white ${inter.className} font-normal text-[16px] hover:bg-white hover:text-[#FF9F0D] transition duration-300 ease-in-out`}
             >
               See Menu
@@ -133,7 +133,7 @@ export default function Home() {
               </li>
             </ul>
             <Link
-              href=""
+              href="/aboutus"
               className={`px-[40px] py-3 w-fit rounded-[30px] bg-[#FF9F0D] text-white ${inter.className} font-normal text-[16px] hover:bg-white hover:text-[#FF9F0D] transition duration-300 ease-in-out`}
             >
               Read More
@@ -702,7 +702,7 @@ export default function Home() {
             style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
             className="text-[##FF9F0D] text-[48px] text-center"
           >
-            <span>Me</span>et Our Chef
+            <span>Me</span>et Our Chefs
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -764,7 +764,7 @@ export default function Home() {
           </div>
         </div>
         <Link
-          href=""
+          href="/chef"
           className={`px-[40px] py-3 w-fit rounded-[30px] bg-[#FF9F0D] text-white ${inter.className} font-normal text-[16px] hover:bg-white hover:text-[#FF9F0D] transition duration-300 ease-in-out`}
         >
           See More

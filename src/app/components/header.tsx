@@ -1,9 +1,28 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
+
+  // Close the dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
@@ -19,6 +38,7 @@ export default function Header() {
           />
         </a>
 
+        {/* Mobile Menu Button */}
         <button
           className="lg:hidden text-white text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -27,37 +47,56 @@ export default function Header() {
           <i className="bi bi-list"></i>
         </button>
 
+        {/* Navigation Links */}
         <div
           className={`lg:flex flex-col lg:flex-row items-center gap-[20px] w-full lg:w-auto ${
             isMenuOpen ? "flex" : "hidden"
           } lg:static fixed top-[90px] left-0 bg-[#0D0D0DF2] lg:bg-transparent px-[20px] lg:px-0 z-20`}
         >
-          <ul className="flex flex-col lg:flex-row gap-[20px] lg:gap-[40px]">
-            <li>
+          <ul className="flex flex-col lg:flex-row gap-[20px] lg:gap-[25px] xl:gap-[40px]">
+            <li className="hover:text-[#FF9F0D]">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:text-[#FF9F0D]">
               <Link href="/menu">Menu</Link>
             </li>
-            <li>
-              <Link href="">Blog</Link>
+            <li className="hover:text-[#FF9F0D]">
+              <Link href="/chef">Our Chefs</Link>
             </li>
-            <li>
-              <Link href="">Pages</Link>
+            <li className="hover:text-[#FF9F0D]">
+              <Link href="/faq">FAQs</Link>
             </li>
-            <li>
-              <Link href="">About</Link>
+            <li className="hover:text-[#FF9F0D]">
+              <Link href="/aboutus">About Us</Link>
             </li>
-            <li>
-              <Link href="/shopping">Shop</Link>
-            </li>
-            <li>
-              <Link href="">Contact</Link>
+            <li ref={dropdownRef} className="relative hover:text-[#FF9F0D]">
+              {/* Dropdown Button */}
+              <button
+                className="flex items-center gap-1"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                Login <i className="bi bi-chevron-down"></i>
+              </button>
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <ul className="absolute left-0 top-full mt-2 bg-white text-black shadow-lg rounded-lg w-48 z-30">
+                  <li className="hover:bg-gray-100 hover:text-[#FF9F0D]">
+                    <a href="/signin" className="block px-4 py-2">
+                      Sign In
+                    </a>
+                  </li>
+                  <li className="hover:bg-gray-100 hover:text-[#FF9F0D]">
+                    <a href="/signup" className="block px-4 py-2">
+                      Sign Up
+                    </a>
+                  </li>
+                </ul>
+              )}
             </li>
           </ul>
 
           {/* Search Bar */}
-          <form className="min-w-[310px] bg-transparent mt-4 lg:mt-0">
+          <form className="min-w-[250px] xl:min-w-[280px] bg-transparent mt-4 lg:mt-0">
             <div className="relative bg-transparent flex">
               <input
                 type="search"
@@ -76,6 +115,8 @@ export default function Header() {
               </button>
             </div>
           </form>
+
+          {/* Shopping Icon */}
           <Link href="/shopping">
             <i className="bi bi-handbag"></i>
           </Link>

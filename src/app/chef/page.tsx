@@ -21,40 +21,37 @@ const chefs = [
 const ChefGrid = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Background Section */}
       <div
-        className="w-full bg-no-repeat bg-center flex justify-center"
+        className=" pt-[150px] lg:pt-0 w-full bg-no-repeat bg-center flex justify-center  "
         style={{
           backgroundImage: "url('/unsplash.png')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
-          width: "100%",
           height: "300px",
         }}
       >
-        {/* Header Section */}
-        <div className="w-full max-w-5xl flex flex-col justify-center items-center text-white mb-10">
-          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">
-            Our Chef
+        <div className="w-full max-w-5xl flex flex-col justify-center items-center text-white text-center py-16">
+          <p className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+            Our Chefs
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
-            <p className="text-xl sm:text-2xl md:text-3xl text-[20px]">Home</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="/" className="text-xl sm:text-2xl md:text-3xl">Home</a>
             <div className="flex items-center">
-              <Image
-                src="/Vector.png" // Ensure the image is located in the public folder
-                width={20} // Adjust width and height as necessary
-                height={20}
+            <Image
+                src="/Vector.png"
+                width={10}
+                height={10}
                 alt="Vector Icon"
               />
-              <p className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D] text-[20px]">
-                chef
-              </p>
+              <a href="/chef" className="ml-2 text-xl sm:text-2xl md:text-3xl text-[#FF9F0D]">
+                Chefs
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="p-6 mt-20 bg-white">
+      <div className="max-w-[1320px] mx-auto py-[50px] px-[20px] lg:px-[60px] bg-white">
         {/* Grid with responsive columns */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
           {chefs.map((chef, index) => (
