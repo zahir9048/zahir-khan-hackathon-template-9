@@ -1,6 +1,13 @@
 "use client";
 import Link from "next/link";
 import { Great_Vibes, Inter } from "@next/font/google";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { useState } from "react";
 
 const greatVibes = Great_Vibes({
@@ -243,7 +250,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="sec4 px-[20px] sm:px-[60px]py-[50px] text-white max-w-[1320px] lg:h-[800px] mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-0 gap-[30px]">
+      <div className="sec4 px-[20px] py-[60px] sm:px-[60px] py-[50px] text-white max-w-[1320px] lg:h-[800px] mx-auto flex justify-between items-center flex-col lg:flex-row lg:gap-0 gap-[30px]">
         <div className="lg:w-[50%] flex flex-wrap gap-[20px] justify-center">
           <div className="flex gap-[20px] items-end flex-col sm:flex-row">
             <div className="sm:max-w-[360px] h-[360px]">
@@ -296,20 +303,20 @@ export default function Home() {
         </div>
         <div className="lg:w-[40%]">
           <h3
-            className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-normal`}
+            className={`${greatVibes.className} text-[#FF9F0D] text-[32px] font-normal lg:text-start text-center`}
           >
             Why Choose us
           </h3>
           <div className="flex flex-col gap-[25px]">
             <h1
               style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-              className="md:leading-[68px] font-helvetica text-[38px] md:text-[60px] text-white"
+              className="md:leading-[68px] font-helvetica text-[38px] md:text-[60px] text-white lg:text-start text-center"
             >
               <span className="text-[#FF9F0D]">Ex</span>tra ordinary taste And
               Experienced
             </h1>
             <p
-              className={`${inter.className} font-normal text-[16px] text-white`}
+              className={`${inter.className} font-normal text-[16px] text-white text-center lg:text-start`}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               diam pellentesque bibendum non dui volutpat fringilla bibendum.
@@ -317,7 +324,7 @@ export default function Home() {
               Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit
               eu velit in consequat.
             </p>
-            <div className="flex gap-[20px]">
+            <div className="flex gap-[20px] lg:justify-start justify-center">
               <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                 <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
                   <img
@@ -326,7 +333,7 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="fomt-normal text-[18px]">Fast Food</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">Fast Food</h6>
               </div>
               <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                 <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
@@ -336,7 +343,7 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="fomt-normal text-[18px]">Lunch</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">Lunch</h6>
               </div>
               <div className="flex flex-col gap-[10px] items-center cursor-pointer">
                 <div className="py-5 px-5 bg-[#FF9F0D] text-white rounded-[6px] flex justify-center items-center">
@@ -346,13 +353,13 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <h6 className="fomt-normal text-[18px]">Dinner</h6>
+                <h6 className="font-normal text-[18px] text-center lg:text-start">Dinner</h6>
               </div>
             </div>
-            <div className="h-[100%] flex">
+            <div className="h-[100%] flex justify-center lg:justify-start">
               <div className="bg-[#FF9F0D] rounded-l-[6px] w-[5px] h-auto"></div>
 
-              <div className="flex justify-around bg-white py-[12px] rounded-r-[6px] w-[300px]">
+              <div className="flex justify-around bg-white py-[12px] rounded-r-[6px] max-w-[300px]">
                 <h2
                   className="text-[#FF9F0D] font-bold text-[48px]"
                   style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
@@ -756,6 +763,139 @@ export default function Home() {
         >
           See More
         </Link>
+      </div>
+      <div className="sec8 px-[20px] sm:px-[60px] lg:py-[60px] max-w-[1320px] lg:h-[800px] mx-auto flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center">
+          <h5
+            className={`${greatVibes.className} text-[32px] text-[#FF9F0D] font-normal `}
+          >
+            Testimonials
+          </h5>
+          <h2
+            className="text-white text-[48px] font-bold text-center"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            <span className="text-[#FF9F0D]">Wh</span>at our client are saying
+          </h2>
+        </div>
+        <div className="swiper-parent w-[100%] ">
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            loop={true}
+            direction="horizontal"
+          >
+            <SwiperSlide>
+              <div className="bg-white p-[50px] max-w-[860px] lg:h-[450px] mx-auto">
+                <div className="w-[133px] h-[133px] mx-auto transform mt-[-125px] z-30">
+                  <img
+                    src="/person5.png"
+                    className="w-[100%] h-[100%] object-contain rounded-[50%]"
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col gap-[20px] items-center">
+                  <div>
+                    <img src="/quotes.png" alt="" />
+                  </div>
+                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque diam pellentesque bibendum non dui volutpat
+                    fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                    pretium donec id elementum. Ultrices mattis sed vitae mus
+                    risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+                  </p>
+                  <div className="flex">
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                  </div>
+                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Alamin Hasan</h5>
+                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Food Specialist</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-white p-[50px] max-w-[860px] lg:h-[450px] mx-auto">
+                <div className="w-[133px] h-[133px] mx-auto transform mt-[-125px] z-30">
+                  <img
+                    src="/person5.png"
+                    className="w-[100%] h-[100%] object-contain rounded-[50%]"
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col gap-[20px] items-center">
+                  <div>
+                    <img src="/quotes.png" alt="" />
+                  </div>
+                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque diam pellentesque bibendum non dui volutpat
+                    fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                    pretium donec id elementum. Ultrices mattis sed vitae mus
+                    risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+                  </p>
+                  <div className="flex">
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                  </div>
+                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Zahir Khan</h5>
+                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Food Specialist</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-white p-[50px] max-w-[860px] lg:h-[450px] mx-auto">
+                <div className="w-[133px] h-[133px] mx-auto transform mt-[-125px] z-30">
+                  <img
+                    src="/person5.png"
+                    className="w-[100%] h-[100%] object-contain rounded-[50%]"
+                    alt=""
+                  />
+                </div>
+                <div className="flex flex-col gap-[20px] items-center">
+                  <div>
+                    <img src="/quotes.png" alt="" />
+                  </div>
+                  <p className="m-0 text-center text-[18px] font-normal lg:w-[75%] mx-auto" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque diam pellentesque bibendum non dui volutpat
+                    fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                    pretium donec id elementum. Ultrices mattis sed vitae mus
+                    risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+                  </p>
+                  <div className="flex">
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                    <i className="bi bi-star-fill"></i>
+                  </div>
+                  <h5 className="font-bold text-[24px] text-[#333333]" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Asim Khan</h5>
+                  <p className="m-0 text-[#828282] text-[16px] font-normal" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                  >Food Specialist</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );

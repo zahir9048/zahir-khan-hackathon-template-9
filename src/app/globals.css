@@ -24,3 +24,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.swiper-slide{
+  padding-top: 80px;
+}
