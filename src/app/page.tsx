@@ -362,6 +362,105 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="bg-[url('/sec5bg.png')] relative bg-cover bg-center">
+        <div className="absolute inset-0 bg-black bg-opacity-75"></div>
+        <div className="sec5 text-white max-w-[1320px] relative h-[470px] mx-auto flex flex-col justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="flex flex-col items-center justify-center group cursor-pointer">
+              <div className="w-[120px] h-[120px] ">
+                <img
+                  src="/sec5icon1.png"
+                  className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <p
+                  className="m-0 font-bold text-[24px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  Professional Chefs
+                </p>
+                <p
+                  className="m-0 font-bold text-[40px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  420
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center group cursor-pointer">
+              <div className="w-[120px] h-[120px] ">
+                <img
+                  src="/sec5icon2.png"
+                  className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <p
+                  className="m-0 font-bold text-[24px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  Items Of Food
+                </p>
+                <p
+                  className="m-0 font-bold text-[40px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  320
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center group cursor-pointer">
+              <div className="w-[120px] h-[120px] ">
+                <img
+                  src="/sec5icon3.png"
+                  className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <p
+                  className="m-0 font-bold text-[24px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  Years Of Experienced
+                </p>
+                <p
+                  className="m-0 font-bold text-[40px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  30+
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center group cursor-pointer">
+              <div className="w-[120px] h-[120px] ">
+                <img
+                  src="/sec5icon4.png"
+                  className="w-[100%] h-[100%] rounded-[6px] object-center object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <p
+                  className="m-0 font-bold text-[24px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  Happy Customers
+                </p>
+                <p
+                  className="m-0 font-bold text-[40px]"
+                  style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+                >
+                  220
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
