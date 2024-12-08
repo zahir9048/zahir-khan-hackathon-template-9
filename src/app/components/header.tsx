@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -6,11 +6,17 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className={`bg-[#0D0D0DF2] text-[#FFF] pt-[25px] font-inter fixed top-0 left-0 right-0 z-30 lg:relative`}>
+    <div
+      className={`bg-[#0D0D0DF2] text-[#FFF] pt-[25px] font-inter fixed top-0 left-0 right-0 z-30 lg:relative`}
+    >
       <div className="max-w-[1320px] px-[20px] sm:px-[60px] h-[90px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="w-[110px] h-[20px]">
-          <img src="/logo.png" className="w-[100%] h-[100%] object-center object-contain" alt="" />
+          <img
+            src="/logo.png"
+            className="w-[100%] h-[100%] object-center object-contain"
+            alt=""
+          />
         </a>
 
         <button
@@ -31,7 +37,7 @@ export default function Header() {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="">Menu</Link>
+              <Link href="/menu">Menu</Link>
             </li>
             <li>
               <Link href="">Blog</Link>
@@ -43,7 +49,7 @@ export default function Header() {
               <Link href="">About</Link>
             </li>
             <li>
-              <Link href="">Shop</Link>
+              <Link href="/shopping">Shop</Link>
             </li>
             <li>
               <Link href="">Contact</Link>
@@ -65,11 +71,14 @@ export default function Header() {
                 className="text-white p-3 bg-transparent absolute inset-y-0 end-0 pe-3"
               >
                 <div className="flex items-center pointer-events-none">
-                  <i className="bi bi-search"></i>
+                  <i className="bi bi-search text-white"></i>
                 </div>
               </button>
             </div>
           </form>
+          <Link href="/shopping">
+            <i className="bi bi-handbag"></i>
+          </Link>
         </div>
       </div>
 
